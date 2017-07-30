@@ -8,6 +8,16 @@ exports.getCurrentTime = function(req, res){
     
 }
 
+exports.getHostname = function(req, res){
+    
+    var param = req.body.systemParam;
+    var systemInfo = require('../lib/runSystemCmds');
+    var hostname = systemInfo.runCmd("hostname -f");
+    res.json({ "hotname" : hostname});
+    //res.send({"total storage": totalStorage, "used storage" : usedStorage});
+    
+}
+
 exports.getStorageInfo = function(req, res){
     
     var param = req.body.systemParam;

@@ -10,3 +10,5 @@ The agent requires the following npm binaries:
 1. express
 2. body-parser
 3. shelljs
+
+To create the npm pacakge.json using the command "npm init"
