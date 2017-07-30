@@ -1,0 +1,12 @@
+/*
+*
+* Author: Arun Purushothaman
+* Copyright 2017
+*
+*/
+
+The agent requires the following npm binaries:
+
+1. express
+2. body-parser
+3. shelljs
